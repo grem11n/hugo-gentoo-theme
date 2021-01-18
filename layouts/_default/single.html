@@ -4,7 +4,7 @@
       <h1 class="title">{{ .Title }}</h1>
       <div class="meta">
         <time class="pub-time"  datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-          {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+          {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006-01-02") }}
         </time>
         <div class="terms">
           {{ if .Params.categories }}
@@ -27,11 +27,18 @@
     <div class="post-body">
       {{ .Content }}
     </div>
+    {{ if eq .File.Dir "post/" }}
     <footer class="post-footer">
-      <!-- /.social -->
-      <div class="share">
-        {{ partial "share.html" }}
+      <hr>
+      <!-- /.social share -->
+      {{ partial "share.html" . }}
+      </br>
+      </br>
+      {{ if .Site.Params.Social.twitter }}
+      <div>
+          <italic>If you have any questions or feedback, ping me on Twitter: <a href="https://twitter.com/{{ .Site.Params.Social.twitter }}" rel="me" target="blank">@{{ .Site.Params.Social.twitter }}</a> </italic>
       </div>
+      {{ end }}
 
       <div class="pagenation">
         <ul class="pagenation-list">
@@ -48,6 +55,7 @@
         </ul>
       </div>
     </footer>
+    {{ end }}
   </article><!-- /.post -->
 
   <!--/.related -->
