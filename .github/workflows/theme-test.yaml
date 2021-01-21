@@ -41,4 +41,4 @@ jobs:
           hugo -v -t hugo-gentoo-theme -d ./public
 
       - name: Test HTML from Hugo ${{ matrix.hugo }}
-        run: docker run -v ${GITHUB_WORKSPACE}/public:/website 18fgsa/html-proofer /website --disable-external
+        run: docker run -v ${GITHUB_WORKSPACE}/example-website/public:/website 18fgsa/html-proofer /website --disable-external
