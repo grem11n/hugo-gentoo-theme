@@ -1,34 +1,38 @@
-baseurl = "Your Site URL"
-languageCode = "Your language code"
-title = "Your Site Name"
-copyright = "Your Site copyright"
+baseURL = "https://example.com"
+title = "Gentoo"
+languageCode = "en-us"
+theme = "gentoo"
+googleAnalytics = ""
+copyright = "&copy; Copyright Year, Your Name"
 canonifyurls = true
-paginate = 3
-
-googleAnalytics = "Yout Google Analytics ID"
+paginate = 6
 
 [params]
-  description = "Your site description"
-  author = "Your Name"
+  description = "This website is using Gentoo theme"
+
+  # mainSections configures, pages from which sections will be listed on the main page
+  mainSections = ["post", "posts"]
 
 [taxonomies]
+  # categories are rendered in top menu
   category = "categories"
   tag = "tags"
 
-[[menu.global]]
-    name = "Categories"
-    url = "/categories/"
 
+# You can also configure static pages on your website.
+# to make it work, you need to have corresponding subdirectory under content/ dir with index.md
+# In this particular case it would be:
+# content/about/index.md
+#
 [[menu.global]]
-    name = "Tags"
-    url = "/tags/"
-
-[[menu.footer]]
     name = "About"
-    url = "/page/about/"
+    url = "/about/"
 
-
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+# You can configure links to your social media
+[params.social]
+    twitter       = ""
+    github        = ""
+    telegram      = ""
+    email         = ""
+    linkedin      = ""
+    stackoverflow = ""
