@@ -4,7 +4,7 @@
 This is a fork of the [hugo-gentoo-theme](https://github.com/d-kusk/hugo-gentoo-theme) theme for [Hugo](https://gohugo.io), which is archived now.
 This theme has a motif of Gentoo penguin.
 
-![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/master/images/page-example.png)
+![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/master/images/screenshot.png)
 
 For a live demo of this theme you can visit:
 - [grem1.in](grem1.in)
@@ -129,4 +129,4 @@ You can arrange images on a page to move them to the left, right, or in the cent
 ```
 
 ## License
-This theme is released under the [MIT license](LICENSE)
+This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/master/LICENSE.md)
