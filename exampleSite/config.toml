@@ -1,9 +1,9 @@
 baseURL = "https://example.com"
 title = "Gentoo"
 languageCode = "en-us"
-theme = "gentoo"
+theme = "hugo-gentoo-theme"
 googleAnalytics = ""
-copyright = "&copy; Copyright Year, Your Name"
+copyright = "(c) Copyright Year, Your Name"
 canonifyurls = true
 paginate = 6
 
