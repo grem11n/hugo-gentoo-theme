@@ -17,6 +17,7 @@ paginate = 6
   # categories are rendered in top menu
   category = "categories"
   tag = "tags"
+  series = "series"
 
 
 # You can also configure static pages on your website.
