@@ -9,7 +9,7 @@ This theme has a motif of Gentoo penguin.
 For a live demo of this theme you can visit:
 - [grem1.in](grem1.in)
 
-## Feature
+## Features
 
 - Responsive Design
 - Support for tags and categories
@@ -127,6 +127,12 @@ You can arrange images on a page to move them to the left, right, or in the cent
 ```
 {{< figure src="/img/picture.jpg" class="left" >}}
 ```
+
+## Contributing
+
+If you have an idea on how to improve this theme or found a bug feel free to use [GitHub issues](https://github.com/grem11n/hugo-gentoo-theme/issues) to let me know.
+
+If you want to contribute to this theme, please, fork this repository and create a pull request.
 
 ## License
 This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/master/LICENSE.md)
