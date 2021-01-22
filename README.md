@@ -6,9 +6,6 @@ This theme has a motif of Gentoo penguin.
 
 ![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/master/images/screenshot.png)
 
-For a live demo of this theme you can visit:
-- [grem1.in](grem1.in)
-
 ## Features
 
 - Responsive Design
@@ -16,6 +13,18 @@ For a live demo of this theme you can visit:
 - Support of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration file](https://gohugo.io/getting-started/configuration/) file
 - Support of the social links
 - Support post image thumbnails
+
+## Preview the theme
+
+For a live demo of this theme you can visit:
+- [grem1.in](grem1.in)
+
+You can also preview this theme locally. It is shipped with a fully configured example site. For a quick preview clone this repository and execute:
+
+```
+$ cd exampleSite/
+$ hugo serve  --themesDir ../..
+```
 
 ## Usage
 
@@ -58,6 +67,7 @@ paginate = 6
   # categories are rendered in top menu
   category = "categories"
   tag = "tags"
+  series = "series"
 
 
 # You can also configure static pages on your website.
@@ -122,7 +132,7 @@ tags: ["gentoo", "theme", "hugo"]
 
 ### Arrange images on a page
 
-You can arrange images on a page to move them to the left, right, or in the center of a page. Image will be centered by default. To change its position, add a `class` parameter like on example below:
+You can arrange images on a page to move them to the left, right, or in the center of a page. Image placed on the right hand side by default. To change its position, add a `class` parameter like on example below:
 
 ```
 {{< figure src="/img/picture.jpg" class="left" >}}
