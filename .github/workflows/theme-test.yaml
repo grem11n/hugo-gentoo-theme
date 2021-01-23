@@ -18,16 +18,8 @@ jobs:
 
 
     steps:
-      - name: Checkout Hugo Basic Example
-        uses: actions/checkout@v2
-        with:
-          repository: gohugoio/HugoBasicExample
-          path: example-website
-
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          path: example-website/themes/hugo-gentoo-theme
 
       - name: Test with Hugo ${{ matrix.hugo }}
         uses: peaceiris/actions-hugo@v2
@@ -37,8 +29,8 @@ jobs:
 
       - name: Build with Hugo ${{ matrix.hugo }}
         run: |
-          cd example-website
-          hugo -v -t hugo-gentoo-theme -d ./public
+          cd exampleSite
+          hugo -v --themesDir ../.. -d ./public
 
       - name: Test HTML from Hugo ${{ matrix.hugo }}
-        run: docker run -v ${GITHUB_WORKSPACE}/example-website/public:/website 18fgsa/html-proofer /website --disable-external
+        run: docker run -v ${GITHUB_WORKSPACE}/exampleSite/public:/website 18fgsa/html-proofer /website --disable-external
