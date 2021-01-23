@@ -4,6 +4,6 @@ draft: false
 date: "2021-01-22"
 ---
 
-{{< figure src="/images/Gentoo-Penguin.jpg" class="center" >}}
+{{< figure src="/images/Gentoo-Penguin.jpg" class="center" alt="gentoo-penguin" >}}
 
 This is an example of a static page created with Gentoo theme for Hugo
