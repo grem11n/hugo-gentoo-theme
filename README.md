@@ -19,7 +19,7 @@ This theme has a motif of Gentoo penguin.
 
 For a live demo of this theme you can visit:
 - [hugo-gentoo-theme.netlify.app](https://hugo-gentoo-theme.netlify.app)
-- [grem1.in](grem1.in)
+- [grem1.in](https://grem1.in)
 
 You can also preview this theme locally. It is shipped with a fully configured example site. For a quick preview clone this repository and execute:
 
