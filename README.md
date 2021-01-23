@@ -1,5 +1,6 @@
 # hugo-gentoo-theme
 ![test-theme](https://github.com/grem11n/hugo-gentoo-theme/workflows/test-theme/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7daab0af-af8d-415c-9d83-f6994bc8b67b/deploy-status)](https://app.netlify.com/sites/laughing-bartik-75b6a3/deploys)
 
 This is a fork of the [hugo-gentoo-theme](https://github.com/d-kusk/hugo-gentoo-theme) theme for [Hugo](https://gohugo.io), which is archived now.
 This theme has a motif of Gentoo penguin.
@@ -17,6 +18,7 @@ This theme has a motif of Gentoo penguin.
 ## Preview the theme
 
 For a live demo of this theme you can visit:
+- [Demo page](https://laughing-bartik-75b6a3.netlify.app/)
 - [grem1.in](grem1.in)
 
 You can also preview this theme locally. It is shipped with a fully configured example site. For a quick preview clone this repository and execute:
@@ -137,6 +139,12 @@ You can arrange images on a page to move them to the left, right, or in the cent
 ```
 {{< figure src="/img/picture.jpg" class="left" >}}
 ```
+
+### Netlify
+
+You can connect to Netlify and deploy your site by just pressing this button!
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/grem11n/hugo-gentoo-theme)
 
 ## Contributing
 
