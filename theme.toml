@@ -3,7 +3,7 @@
 
 name = "Hugo Gentoo Theme"
 license = "MIT"
-licenselink = "https://github.com/grem11n/hugo-gentoo-theme/blob/master/LICENSE.md"
+licenselink = "https://github.com/grem11n/hugo-gentoo-theme/blob/main/LICENSE.md"
 description = "This is a fork of https://github.com/dsk52/hugo-gentoo-theme, which is archived now"
 homepage = "https://github.com/grem11n/hugo-gentoo-theme"
 tags = ["blog", "responsive", "clean", "minimal", "personal", "google analytics", "mobile", "font awesome"]
