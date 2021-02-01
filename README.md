@@ -10,10 +10,11 @@ This theme has a motif of Gentoo penguin.
 ## Features
 
 - Responsive Design
-- Support for tags and categories
-- Support of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration file](https://gohugo.io/getting-started/configuration/) file
-- Support of the social links
-- Support post image thumbnails
+- Supports tags and categories
+- Supports [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration file](https://gohugo.io/getting-started/configuration/) file
+- Supports the social links
+- Supports post image thumbnails
+- Default Hugo shortcodes for hidden text and raw HTML 
 
 ## Preview the theme
 
@@ -28,9 +29,7 @@ $ cd exampleSite/
 $ hugo serve  --themesDir ../..
 ```
 
-## Usage
-
-### Installation
+## Installation
 
 Before installing this theme, be sure to [install Hugo](https://gohugo.io/getting-started/quick-start/)
 and [create a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site).
@@ -43,7 +42,7 @@ $ git submodule add https://github.com/grem11n/hugo-gentoo-theme.git themes/hugo
 
 With a submodule you will be able to easily update the theme. However, you can also just download the repository contents and put it into your `themes/` directory for your Hugo website. You can modify this theme for your needs as well.
 
-### Configuration
+## Configuration
 
 You need to modify your `config.toml` file in the root of your Hugo website. An example `config.toml` for Gentoo theme is listed below. Depends on your hosting provider some of the general parameters may be different.
 
@@ -91,7 +90,7 @@ paginate = 6
     stackoverflow = ""
 ```
 
-### Updating
+## Updating
 
 To get updates to the theme, run the following from the root directory of your Hugo site: 
 
@@ -99,7 +98,7 @@ To get updates to the theme, run the following from the root directory of your H
 $ git submodule update --remote themes/hugo-gentoo-theme
 ```
 
-### Preview your site locally
+## Preview your site locally
 
 Use Hugo’s built-in server to see your site in action as you make changes.
 
@@ -108,6 +107,8 @@ $ hugo server -D -w --gc -F -t hugo-gentoo-theme
 ```
 
 After that visit ``localhost:1313`` in your browser.
+
+## Content Management
 
 ### Add image thumbnails to your posts
 
@@ -140,7 +141,32 @@ You can arrange images on a page to move them to the left, right, or in the cent
 {{< figure src="/img/picture.jpg" class="left" >}}
 ```
 
-### Netlify
+### Hidden text
+
+You can hide text with HTML `<details>` tag. Use `details` shortcode for this:
+
+```
+{{< details Read more...>}}
+... more text ...
+{{< /details >}}
+
+```
+You can find an example on the [Demo website](https://hugo-gentoo-theme.netlify.app/post/shortcodes/)
+
+### Raw HTML
+
+Use raw HTML in your posts like this:
+
+```
+{{< rawhtml >}}
+  <p class="speshal-fancy-custom">
+    This is <strong>raw HTML</strong>, inside Markdown.
+  </p>
+{{< /rawhtml >}}
+```
+You can find an example on the [Demo website](https://hugo-gentoo-theme.netlify.app/post/shortcodes/)
+
+## Netlify
 
 You can connect to Netlify and deploy your site by just pressing this button!
 
