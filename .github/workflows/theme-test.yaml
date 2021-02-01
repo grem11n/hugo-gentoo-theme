@@ -3,7 +3,7 @@ name: test-theme
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     types: [opened, edited, reopened, synchronize]
 

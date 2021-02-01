@@ -5,7 +5,7 @@
 This is a fork of the [hugo-gentoo-theme](https://github.com/d-kusk/hugo-gentoo-theme) theme for [Hugo](https://gohugo.io), which is archived now.
 This theme has a motif of Gentoo penguin.
 
-![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/master/images/screenshot.png)
+![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/main/images/screenshot.png)
 
 ## Features
 
@@ -179,4 +179,4 @@ If you have an idea on how to improve this theme or found a bug feel free to use
 If you want to contribute to this theme, please, fork this repository and create a pull request.
 
 ## License
-This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/master/LICENSE.md)
+This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/main/LICENSE.md)
