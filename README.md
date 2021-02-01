@@ -1,6 +1,6 @@
 # hugo-gentoo-theme
 ![test-theme](https://github.com/grem11n/hugo-gentoo-theme/workflows/test-theme/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7daab0af-af8d-415c-9d83-f6994bc8b67b/deploy-status)](https://app.netlify.com/sites/laughing-bartik-75b6a3/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7daab0af-af8d-415c-9d83-f6994bc8b67b/deploy-status)](https://app.netlify.com/sites/hugo-gentoo-theme/deploys)
 
 This is a fork of the [hugo-gentoo-theme](https://github.com/d-kusk/hugo-gentoo-theme) theme for [Hugo](https://gohugo.io), which is archived now.
 This theme has a motif of Gentoo penguin.
