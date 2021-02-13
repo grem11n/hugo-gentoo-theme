@@ -8,6 +8,9 @@
 	{{ with .Site.Params.social.facebook }}
 	<a class="navbar-item social" href="https://facebook.com/{{.}}" rel="me" target="blank"><i class="fab fa-facebook-f"></i></a>
 	{{ end }}
+	{{ with .Site.Params.social.goodreads }}
+	<a class="navbar-item social" href="https://www.goodreads.com/user/show/{{.}}" rel="me" target="blank"><i class="fab fa-goodreads"></i></a>
+	{{ end }}
 	{{ with .Site.Params.social.github }}
 	<a class="navbar-item social" href="https://github.com/{{.}}" rel="me" target="blank"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
