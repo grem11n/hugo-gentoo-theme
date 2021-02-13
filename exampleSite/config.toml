@@ -31,9 +31,11 @@ paginate = 6
 
 # You can configure links to your social media
 [params.social]
-    twitter       = ""
-    github        = ""
-    telegram      = ""
-    email         = ""
-    linkedin      = ""
-    stackoverflow = ""
+    twitter       = "null"
+    github        = "null"
+    telegram      = "null"
+    facebook      = "null"
+    goodreads     = "null"
+    email         = "example@example.com"
+    linkedin      = "null"
+    stackoverflow = "null"
