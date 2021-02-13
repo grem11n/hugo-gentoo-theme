@@ -36,6 +36,6 @@ paginate = 6
     telegram      = "null"
     facebook      = "null"
     goodreads     = "null"
-    email         = "null"
+    email         = "example@example.com"
     linkedin      = "null"
     stackoverflow = "null"
