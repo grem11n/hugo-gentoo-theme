@@ -3,7 +3,7 @@
     <header class="post-header">
       <h1 class="title">{{ .Title }}</h1>
       <div class="meta">
-        <time class="pub-time"  datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        <time class="pub-time"  datetime="{{ .Date.Format "2006-01-02" | safeHTML }}">
           {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006-01-02") }}
         </time>
         <div class="terms">

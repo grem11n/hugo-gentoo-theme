@@ -1,10 +1,14 @@
 {{ define "main" }}
-  {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
-  <div class="archive-body">
-    {{ range $pag.Pages }}
-      {{ .Render "li" }}
-    {{ end }}
-  </div>
+  {{ if .Site.Params.Welcome.Enable }}
+    {{ partial "welcome.html" . }}
+  {{ else }}
+    {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
+    <div class="archive-body">
+      {{ range $pag.Pages }}
+        {{ .Render "li" }}
+      {{ end }}
+    </div>
 
-  {{ partial "pagination" . }}
+    {{ partial "pagination" . }}
+  {{ end }}
 {{ end }}

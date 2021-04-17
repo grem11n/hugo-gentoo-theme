@@ -1,0 +1,43 @@
+<div class="main-content">
+    <figure class="about">
+        {{ with .Site.Params.Welcome.image }}
+        <img src="{{ . }}" alt="welcome image">
+        {{ end }}
+    </figure>
+    <div class="is-size-1 has-text-centered" >
+        <p>
+        {{ .Site.Params.author }}
+        </p>
+    </div>
+    <nav class="navbar-body">
+        <a class="navbar-body-item" href="{{ "/post/" | relLangURL }}">
+            Blog
+        </a>
+        {{ range .Site.Menus.global }}
+        <a class="navbar-body-item" href="{{ .URL }}">
+          {{ .Name }}
+        </a>
+        {{ end }}
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a class="navbar-body-item" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name | title }}</a>
+        {{ end }}
+    </nav>
+    <div class="welcome-body has-text-centered" >
+        {{ with .Site.Params.Welcome.short }}
+        <p>
+            {{ . | markdownify | safeHTML }}
+        </p>
+        {{ end }}
+        {{ with .Site.Params.Welcome.text }}
+        <p>
+            {{ . | markdownify | safeHTML }}
+        </p>
+        {{ end }}
+    </div>
+    <div class="welcome-body has-text-centered" >
+        <p>
+        <b>Follow me on<br><br></b>
+        </p>
+    </div>
+    {{ partial "social.html" . }}
+</div>

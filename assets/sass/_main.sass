@@ -4439,6 +4439,13 @@ a.nav-item:not(.button)
   overflow-x: auto
   overflow-y: hidden
 
+.navbar-body
+  -webkit-overflow-scrolling: touch
+  align-items: stretch
+  justify-content: center
+  display: flex
+  flex-shrink: 0
+
 .navbar-burger
   cursor: pointer
   display: block
@@ -4496,7 +4503,7 @@ a.nav-item:not(.button)
 .navbar-menu
   display: none
 
-.navbar-item, .navbar-link
+.navbar-item, .navbar-link, .navbar-body-item
   text-decoration: none
   color: #4a4a4a
   display: block
@@ -4509,12 +4516,19 @@ a.navbar-item
     background-color: whitesmoke
     color: #0a0a0a
 
+a.navbar-body-item
+  font-weight: bold
+  font-size: 150%
+  &:hover, &.is-active
+    background-color: whitesmoke
+    color: #0a0a0a
+
 .navbar-link
   &:hover, &.is-active
     background-color: whitesmoke
     color: #0a0a0a
 
-.navbar-item
+.navbar-item, .navbar-body-item
   flex-grow: 0
   flex-shrink: 0
 
@@ -7162,6 +7176,9 @@ body
 
 .categories + .tag
   margin-left: 0.8em
+
+.welcome-body
+  margin-top: 1.6rem
 
 .post-body
   margin-top: 3.5rem
