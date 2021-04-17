@@ -31,6 +31,11 @@
 
       <div id="navMenubd-example" class="navbar-menu">
         <div class="navbar-start">
+          {{ if .Site.Params.Welcome }}
+          <a class="navbar-item" href="post/">
+            Blog
+          </a>
+          {{ end }}
           {{ range .Site.Menus.global }}
           <a class="navbar-item" href="{{ .URL }}">
             {{ .Name }}

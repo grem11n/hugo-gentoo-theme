@@ -1,6 +1,6 @@
 {{ define "main" }}
-  {{ if .Site.Params.Hello.Enable }}
-    {{ partial "hello.html" . }}
+  {{ if .Site.Params.Welcome.Enable }}
+    {{ partial "welcome.html" . }}
   {{ else }}
     {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
     <div class="archive-body">
