@@ -1,19 +1,20 @@
 # hugo-gentoo-theme
 ![test-theme](https://github.com/grem11n/hugo-gentoo-theme/workflows/test-theme/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7daab0af-af8d-415c-9d83-f6994bc8b67b/deploy-status)](https://app.netlify.com/sites/laughing-bartik-75b6a3/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7daab0af-af8d-415c-9d83-f6994bc8b67b/deploy-status)](https://app.netlify.com/sites/hugo-gentoo-theme/deploys)
 
 This is a fork of the [hugo-gentoo-theme](https://github.com/d-kusk/hugo-gentoo-theme) theme for [Hugo](https://gohugo.io), which is archived now.
 This theme has a motif of Gentoo penguin.
 
-![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/master/images/screenshot.png)
+![hugo-gentoo-theme's screenshot](https://raw.githubusercontent.com/grem11n/hugo-gentoo-theme/main/images/screenshot.png)
 
 ## Features
 
 - Responsive Design
-- Support for tags and categories
-- Support of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration file](https://gohugo.io/getting-started/configuration/) file
-- Support of the social links
-- Support post image thumbnails
+- Supports tags and categories
+- Supports [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration file](https://gohugo.io/getting-started/configuration/) file
+- Supports the social links
+- Supports post image thumbnails
+- Default Hugo shortcodes for hidden text and raw HTML 
 
 ## Preview the theme
 
@@ -28,9 +29,7 @@ $ cd exampleSite/
 $ hugo serve  --themesDir ../..
 ```
 
-## Usage
-
-### Installation
+## Installation
 
 Before installing this theme, be sure to [install Hugo](https://gohugo.io/getting-started/quick-start/)
 and [create a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site).
@@ -43,7 +42,7 @@ $ git submodule add https://github.com/grem11n/hugo-gentoo-theme.git themes/hugo
 
 With a submodule you will be able to easily update the theme. However, you can also just download the repository contents and put it into your `themes/` directory for your Hugo website. You can modify this theme for your needs as well.
 
-### Configuration
+## Configuration
 
 You need to modify your `config.toml` file in the root of your Hugo website. An example `config.toml` for Gentoo theme is listed below. Depends on your hosting provider some of the general parameters may be different.
 
@@ -91,7 +90,7 @@ paginate = 6
     stackoverflow = ""
 ```
 
-### Updating
+## Updating
 
 To get updates to the theme, run the following from the root directory of your Hugo site: 
 
@@ -99,7 +98,7 @@ To get updates to the theme, run the following from the root directory of your H
 $ git submodule update --remote themes/hugo-gentoo-theme
 ```
 
-### Preview your site locally
+## Preview your site locally
 
 Use Hugo’s built-in server to see your site in action as you make changes.
 
@@ -108,6 +107,8 @@ $ hugo server -D -w --gc -F -t hugo-gentoo-theme
 ```
 
 After that visit ``localhost:1313`` in your browser.
+
+## Content Management
 
 ### Add image thumbnails to your posts
 
@@ -140,7 +141,32 @@ You can arrange images on a page to move them to the left, right, or in the cent
 {{< figure src="/img/picture.jpg" class="left" >}}
 ```
 
-### Netlify
+### Hidden text
+
+You can hide text with HTML `<details>` tag. Use `details` shortcode for this:
+
+```
+{{< details Read more...>}}
+... more text ...
+{{< /details >}}
+
+```
+You can find an example on the [Demo website](https://hugo-gentoo-theme.netlify.app/post/shortcodes/)
+
+### Raw HTML
+
+Use raw HTML in your posts like this:
+
+```
+{{< rawhtml >}}
+  <p class="speshal-fancy-custom">
+    This is <strong>raw HTML</strong>, inside Markdown.
+  </p>
+{{< /rawhtml >}}
+```
+You can find an example on the [Demo website](https://hugo-gentoo-theme.netlify.app/post/shortcodes/)
+
+## Netlify
 
 You can connect to Netlify and deploy your site by just pressing this button!
 
@@ -153,4 +179,4 @@ If you have an idea on how to improve this theme or found a bug feel free to use
 If you want to contribute to this theme, please, fork this repository and create a pull request.
 
 ## License
-This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/master/LICENSE.md)
+This theme is released under the [MIT license](https://github.com/grem11n/hugo-gentoo-theme/blob/main/LICENSE.md)
