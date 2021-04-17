@@ -19,7 +19,11 @@
   {{ end }}
 
   {{ template "_internal/schema.html" . }}
+
+  <!-- CSS -->
+  {{- $style := resources.Get "sass/style.sass" | toCSS | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+
   {{ partial "json-sitename.html" . }}
 </head>
