@@ -21,10 +21,7 @@
   {{ template "_internal/schema.html" . }}
 
   <!-- CSS -->
-  {{- $inServerMode	:= .Site.IsServer }}
-  {{- $cssTarget := "css/style.css" }}
-  {{- $cssOptions := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
-  {{- $style := resources.Get "sass/style.sass" | toCSS $cssOptions | resources.Minify }}
+  {{- $style := resources.Get "sass/style.sass" | toCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
 
